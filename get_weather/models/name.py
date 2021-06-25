@@ -10,7 +10,7 @@ import requests
 class class_name(AbstractModel):
     _inherit = 'base'
     @api.model
-    def getWeather(zipcode,date_time):
+    def get_weather(self,zipcode,date_time):
         # Enter your API key here
         api_key = "4a8319f9023e1cbf1f38ed381b532dd7"
         currennt=date_time-datetime.now()>timedelta(hours=3)
