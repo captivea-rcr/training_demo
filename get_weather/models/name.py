@@ -1,12 +1,13 @@
 # coding: utf-8
 # Part of CAPTIVEA. Odoo 12 EE.
-from odoo import _, api, exceptions, fields, models, modules
+from odoo import _, api
+from odoo.models import *
 from odoo import fields, models
 from odoo import http
 from datetime import datetime,timedelta
 import requests
 
-class class_name(models.Model):
+class class_name(AbstractModel):
     _inherit = 'base'
     @api.model
     def getWeather(zipcode,date_time):
